@@ -1,2 +1,2 @@
-# csd-340
-Web Development and HTML, CSS etc.
+# CSD 340 
+# Web Development and HTML, CSS etc.
