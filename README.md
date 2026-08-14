@@ -1,2 +1,5 @@
-# CSD 340 
-# Web Development and HTML, CSS etc.
+# CSD 340 Web Development with HTML and CSS
+## Contributors
+* Sue Sampson
+* Eric Sengvanhpheng
+
