@@ -1,0 +1,85 @@
+/* 
+    Eric Sengvanhpheng
+    August 23, 2026
+    CSD 340 Module 3.3 
+
+    site.css - root level CSS file 
+*/
+
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quattrocento:wght@400;700&display=swap');
+
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Container styling */
+#container {
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Body styling with Google Font */
+body {
+    font-family: 'Quattrocento' , 'Times New Roman', serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;                       /* Text spacing */
+    font-size: 20px;
+}
+
+/* Headings with Oswald + other fonts */
+h1, h2, h3, h4 {
+    font-family: 'Oswald', Verdana, Arial;
+    background-color: #1a2332; 
+    color: #ffffff;
+    border: 1px solid #D6A800;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+/* Optional font weight for visual distinction */
+h1 {
+    font-weight: 700;
+    text-align: center;
+}
+
+h2, h3, h4 {
+    font-weight: 400;
+}
+
+/* Original link visual */
+a {
+    color: #c0392b; 
+}
+
+/* Color when mouse is over link */
+a:hover {
+    color: #e74c3c;
+}
+
+/* Color when link visited */
+a:visited {
+    color: #8c8fa3;
+}
+
+/* List alignbment and spacing */
+ul {
+    padding-left: 30px;
+    margin-left: 0;
+    margin-top: 0;
+    margin-bottom: 22px;
+}
+
+li {
+    margin-bottom: 10px;
+    line-height: 1.8;
+}
