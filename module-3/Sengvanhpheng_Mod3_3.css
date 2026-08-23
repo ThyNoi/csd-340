@@ -1,0 +1,116 @@
+/* 
+    Eric Sengvanhpheng
+    August 23, 2026 
+    CSD 340 Module 3.3
+
+    Write a CSS file and modify elements for webpage,
+    with link back to home page
+    
+*/
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    line-height: 1.6;
+}
+
+#container {
+    margin: 50px auto;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center; 
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Side by side divs */
+.left-div {
+    width: 45%; 
+    float: left;
+    margin-right: 10% /* create space between divs */
+}
+
+.right-div {
+    width: 45%;
+    float: left;
+}
+
+.bottom-div {
+    width: 100%;
+    margin-top: 60%;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    float: right;
+    clear: both;
+}
+
+.bottom-div a {
+    float: right;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.bottom-div a:hover {
+    text-decoration: underline;
+}
+
+h3 {
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+ol {
+    font-weight: 300;
+}
+
+.left-div h3,
+.left-div ol {
+    border: 1px solid red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.left-div ol {
+    list-style-position: inside; /* numbers inside the border */
+}
+
+.right-div h3,
+.right-div ol {
+    border: 1px dashed red;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+.right-div ol {
+    list-style-position: inside;
+    list-style-type: upper-roman;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Prevents layout issues */
+#container::after {
+    content:"";
+    display: table;
+    clear: both;
+}
