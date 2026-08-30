@@ -1,8 +1,11 @@
 <!--
 
-Eric Sengvanhpheng
-August 28, 2026
-CSD 340 Module 4.2
+    Eric Sengvanhpheng
+    August 30, 2026
+    CSD 340 Module 4.2
+
+    Write HTML file creating divs,
+    displaying pictures with captions.
 
 -->
 
@@ -12,8 +15,49 @@ CSD 340 Module 4.2
 <head>
     <meta charset="UTF-8">
     <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <link rel="stylesheet" href="Sengvanhpheng_Mod4_2.css" /> <!-- link to matching css file -->
+
 </head>
 <body>
+    <div id="container"> <!-- start of main div container -->
+        <h1>Assignment 4.2: Build a Web Page Exercise - Part 4</h1>
+
+    <div id="image-gallery"> <!-- image div -->
+        <!-- 3 divs with book title, image, caption -->
+        <!-- Book 1 -->
+        <div class="book">
+            <h3>1984</h3>
+            <figure>
+                <img src="images/1984.jpg" alt="Cover of 1984" width="1000" height="1500" />
+                <figcaption>(Author: George Orwell)</figcaption>
+            </figure>
+        </div>
+
+        <!-- Book 2 -->
+        <div class="book">
+            <h3>Red Rising</h3>
+            <figure>
+                <img src="images/redrising.jpg" alt="Cover of Red Rising" width="1500" height="1500" />
+                <figcaption>(Author: Pierce Brown)</figcaption>
+            </figure>
+        </div>
+
+        <!-- Book 3 -->
+        <div class="book">
+            <h3>The Alchemist</h3>
+            <figure>
+                <img src="images/thealchemist.jpg" alt="Cover of The Alchemist" width="1500" height="1500" />
+                <figcaption>(Author: Paulo Coelho)</figcaption>
+            </figure>
+        </div>
+
+    </div> <!-- end of image div -->
+
+    <div class="bottom-div">
+        <a href="../index.html">Back to Landing Page</a>
+    </div>
+    </div> <!-- end of main div container -->
 
 </body>
 </html>

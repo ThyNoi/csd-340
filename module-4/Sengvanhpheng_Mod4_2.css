@@ -1,8 +1,93 @@
 /*
     Eric Sengvanhpheng
-    August 28, 2026
+    August 30, 2026
     CSD 340 Module 4.2
 
+    Write a CSS file and modify elements for webpage,
+    with link back to home page
 
 */
 
+/* --- Headings --- */
+h1 {
+    text-align: center;
+    font-size: 46px;
+    color: rgb(34, 80, 50); /* dark forest green in rgb */
+}
+
+h3 {
+    text-align: center;
+    font-size: 26px;
+    color: rgb(34, 80, 50, 0.9);
+}
+
+/* --- main container --- */
+#container {
+    margin: 50px auto;                              /* centers box horizontally */
+    max-width: 1200px;                              /* limits how wide box gets */
+    padding: 20px;                                  /* space inside the box */
+    background-color: #ffffff;                      /* background color */
+    border-radius: 8px;                             /* rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);      /* shadow effect */
+}
+
+/* --- image gallery grid -- */
+#image-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal columns */
+    gap: 20px;                          /* space between columns */
+    padding: 20px;
+    max-width: 1200px;                  /* limits grid width */
+    margin: 0 auto;                     /* centers the grid on the page */
+    margin-top: 10%;                    /* adds space above the gallery */
+}
+
+/* --- book cards --- */
+.book {
+    border: 1px solid black;
+    padding: 25px;
+    border-radius: 8px;
+    background-color: white;
+    text-align: center;
+}
+
+/* --- figures --- */
+.book figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* --- images --- */
+.book img {
+    width: 100%;        /* fills container width */
+    height: 450px;
+    object-fit: contain;  /* keeps proportions without cropping */
+    border-radius: 4px;
+}
+
+/* --- captions --- */
+.book figcaption {
+    font-style: italic;
+    font-size: .75em;
+    color: rgba(47, 79, 79, 0.9);
+}
+
+/* --- bottom div --- */
+.bottom-div {
+    width: 100%;
+    margin-top: 25%;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    clear: both;
+}
+
+.bottom-div a {
+    float: right;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.bottom-div a:hover {
+    text-decoration: underline;
+}
