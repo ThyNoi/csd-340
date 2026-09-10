@@ -1,0 +1,30 @@
+/*
+    Eric Sengvanhpheng
+    September 10, 2026
+    CSD 340 Module 6.2
+
+    Write a CSS file
+*/
+
+/* header element */
+header {
+    background-color: #2f4f4f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* footer element styling */
+footer {
+
+}
+
+/* styles the portal link in the footer */
+footer a {
+    color: #00008b;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+
