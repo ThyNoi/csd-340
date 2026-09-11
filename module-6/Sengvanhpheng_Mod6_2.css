@@ -3,11 +3,13 @@
     September 10, 2026
     CSD 340 Module 6.2
 
-    Write a CSS file
+    This stylesheet styles the page header, navigation bar, containers,
+    nested card elements, and footer. It controls the page layout, colors,
+    spacing, shadows, and hover effects.
 */
 
 h1 {
-    font-weight: 400px;
+    font-weight: 400;
 }
 
 /* header element */
@@ -20,8 +22,8 @@ header {
 
 #navbar {
     overflow: hidden; /* hide content that extends outside the navbar */
-    background-color: #333;
-    border-bottom: 15px solid #000;
+    background-color: #2f4f4f;
+    border-bottom: 15px solid #daa520;
 }
 
 #navbar a {
@@ -54,7 +56,7 @@ header {
 .card-title {
     text-align: center;
     font-size: 2em; /* twice the default font size */
-    color: navy;
+    color: #2f4f4f;
     font-weight: 400;
 }
 
@@ -62,20 +64,43 @@ header {
     padding: 2px 16px;
 }
 
+.card-content {
+    font-size: 1.1em;
+}
+
+.card-content li {
+    margin-bottom: 6px;
+}
+
+/* for teh whole card class and nested */
 .card:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); 
 }
 
 /* footer element styling */
 footer {
-
+    background-color: #2f4f4f; /* same as header */
+    position: absolute; /* removes footer from the normal page flow and lets you place it precisely */
+    bottom: 0; /* places it at the bottom of its containing area */
+    width: 100%;
 }
 
 /* styles the portal link in the footer */
 footer a {
-    color: #00008b;
+    text-decoration: none;
+    color: white;
+}
+
+/* footer paragraph */
+footer p {
+    color: white;
     font-weight: 400;
     float: right;
     padding-right: 10px;
     font-style: italic;
+}
+
+/* footer link when hovered */
+footer a:hover {
+    text-decoration: underline;
 }
