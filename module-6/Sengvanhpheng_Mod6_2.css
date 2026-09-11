@@ -18,6 +18,12 @@ header {
     text-align: center;
 }
 
+#navbar {
+    overflow: hidden;
+    background-color: #333;
+    border-bottom: 15px solid #000;
+}
+
 /* footer element styling */
 footer {
 
