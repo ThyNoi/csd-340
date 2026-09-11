@@ -6,6 +6,10 @@
     Write a CSS file
 */
 
+h1 {
+    font-weight: 400px;
+}
+
 /* header element */
 header {
     background-color: #2f4f4f;
