@@ -19,9 +19,51 @@ header {
 }
 
 #navbar {
-    overflow: hidden;
+    overflow: hidden; /* hide content that extends outside the navbar */
     background-color: #333;
     border-bottom: 15px solid #000;
+}
+
+#navbar a {
+    float: left; 
+    display: block; /* makes entire area clickable */
+    color: white;
+    text-align: center; /* center text inside each link */
+    padding: 14px 16px; /* top/bottom 14px, left/right 16px */
+    text-decoration: none; /* remove underline */
+}
+
+#navbar a:hover {
+    background-color: lightgrey; /* change background when mouse hovers */
+    color: black; /* change text color for readability */
+}
+
+#container {
+    margin-top: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 10px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* gives the div a raised/ shadow effect, 3d */
+    transition: 0.3s; /* if a property changes, animate the change over time instead of instantly */
+    width: 50%;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em; /* twice the default font size */
+    color: navy;
+    font-weight: 400;
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); 
 }
 
 /* footer element styling */
@@ -37,4 +79,3 @@ footer a {
     padding-right: 10px;
     font-style: italic;
 }
-
