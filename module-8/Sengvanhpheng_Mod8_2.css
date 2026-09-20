@@ -1,0 +1,126 @@
+/*
+    Eric Sengvanhpheng
+    September 20, 2026
+    CSD 340 Module 8.2
+
+    This stylesheet styles mod 8, styling tables and footer.
+*/
+
+h1 {
+    font-weight: 400;
+}
+
+/* header element */
+header {
+    background-color: #2f4f4f;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+#navbar {
+    overflow: hidden; /* hide content that extends outside the navbar */
+    background-color: #2f4f4f;
+    border-bottom: 15px solid #daa520;
+}
+
+#navbar a {
+    float: left; 
+    display: block; /* makes entire area clickable */
+    color: white;
+    text-align: center; /* center text inside each link */
+    padding: 14px 16px; /* top/bottom 14px, left/right 16px */
+    text-decoration: none; /* remove underline */
+}
+
+#navbar a:hover {
+    background-color: lightgrey; /* change background when mouse hovers */
+    color: black; /* change text color for readability */
+}
+
+#container {
+    margin: 2% 5% 100px 5%;
+    padding: 10px;
+}
+
+#movies {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+#movies th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+}
+
+#movies td {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* gives the div a raised/ shadow effect, 3d */
+    transition: 0.3s; /* if a property changes, animate the change over time instead of instantly */
+    width: 50%;
+}
+
+.card-title {
+    text-align: center;
+    font-size: 2em; /* twice the default font size */
+    color: #2f4f4f;
+    font-weight: 400;
+}
+
+.card-content {
+    padding: 2px 16px;
+}
+
+.card-content {
+    font-size: 1.1em;
+}
+
+.card-content li {
+    margin-bottom: 6px;
+}
+
+/* for teh whole card class and nested */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2); 
+}
+
+/* footer element styling */
+footer {
+    background-color: #2f4f4f; /* same as header */
+    position: fixed; /* keeps footer pinned to viewport even when scrolling */
+    bottom: 0; /* places it at the bottom of its containing area */
+    left: 0; /* anchord to very left of screen */
+    width: 100%;
+}
+
+/* styles the portal link in the footer */
+footer a {
+    text-decoration: none;
+    color: white;
+}
+
+/* footer paragraph */
+footer p {
+    color: white;
+    font-weight: 400;
+    float: right;
+    padding-right: 10px;
+    font-style: italic;
+}
+
+/* footer link when hovered */
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* target just copyright */
+.copyright {
+    float: left;
+    padding-left: 10px;
+}

@@ -1,0 +1,158 @@
+<!--
+    Eric Sengvanhpheng
+    September 20, 2026
+    CSD 340 Module 8.2
+
+    Write HTML file with HTML5 adding a table with movie titles, characters, and add copyright.
+-->
+
+<!DOCTYPE html> <!-- Tells the browser this is using modern HTML -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <link rel="stylesheet" href="Sengvanhpheng_Mod8_2.css" /> <!-- Link to css file -->
+
+</head>
+<body>
+    <header> <!-- HTML 5 header tag -->
+        <h1>Assignment 8.2: Build a Web Page - Part 6</h1>
+    </header>
+
+    <div id="navbar">
+        <a href="#">Home</a> <!-- # link doesn't go to real page -->
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div id="container"> <!-- container start -->
+        <!-- card 1: movies -->
+        <div class="card"> <!-- card div with nested divs -->
+            <!-- card for table movies -->
+            <div class="card-title">Top 5 Favorite Movies</div>
+            <div class="card-content">
+                <!-- table, and header row using th -->
+                <table id="movies">
+                    <tr>
+                        <th>Movie Name</th>
+                        <th>Two Characters</th>
+                    </tr>
+                    <!-- 1. movie using td -->
+                    <tr>
+                        <td>The Matrix</td>
+                        <td>
+                            <ul>
+                                <li>Neo</li>
+                                <li>Agent Smith</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!-- 2. movie using td -->
+                    <tr>
+                        <td>Training Day</td>
+                        <td>
+                            <ul>
+                                <li>Alonzo Harris</li>
+                                <li>Jake Hoyt</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!-- 3. movie using td -->
+                    <tr>
+                        <td>Lord of the Rings</td>
+                        <td>
+                            <ul>
+                                <li>Frodo</li>
+                                <li>Gandalf</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!-- 4. movie using td -->
+                    <tr>
+                        <td>Inception</td>
+                        <td>
+                            <ul>
+                                <li>Cobb</li>
+                                <li>Ariadne</li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <!-- 5. movie using td -->
+                    <tr>
+                        <td>Blade Runner 2049</td>
+                        <td>
+                            <ul>
+                                <li>Officer K</li>
+                                <li>Joi</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+
+                </div>
+            </div>
+
+            <br><br>
+
+            <!-- card 2: foods -->
+            <div class="card">
+            <div class="card-title">Top 5 Favorite Foods</div>
+            <div class="card-content">
+                    <!-- ordered list of top 5 foods -->
+                    <ol>
+                        <!-- _blank to open link in new tab -->
+                        <!-- noopener & noreferrer used for security -->
+                        <li>
+                            <a  href="https://www.simplyrecipes.com/recipes/how_to_grill_the_best_steak/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                Grilled Steak
+                            </a>
+                        </li>
+
+                        <li>
+                            <a  href="https://www.holajalapeno.com/authentic-mexican-burrito-recipe/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                Beef Burrito
+                            </a>
+                        </li>
+
+                        <li>
+                            <a  href="https://www.jessicagavin.com/street-tacos/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                Street Tacos
+                            </a>
+                        </li>
+
+                        <li>
+                            <a  href="https://hot-thai-kitchen.com/hot-soak-sticky-rice/"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                Sticky Rice
+                            </a>
+                        </li>
+
+                        <li>
+                            <a  href="https://www.kinders.com/recipes/gas-grill-ribs"
+                                target="_blank"
+                                rel="noopener noreferrer">
+                                BBQ Ribs
+                            </a>
+                        </li>
+                    </ol>
+            </div>
+        </div>
+    </div> <!-- closes container -->
+
+    <!-- HTML 5 footer element with copyright -->
+    <footer>
+        <p class="copyright">&copy; 2026 Sengvanhpheng</p>
+        <p>
+            <a href="../index.html">Back to Landing Page</a>
+        </p>
+    </footer>
+
+</body>
+</html>
