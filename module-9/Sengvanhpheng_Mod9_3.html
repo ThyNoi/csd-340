@@ -1,0 +1,86 @@
+<!-- 
+    Eric Sengvanhpheng
+    September 27, 2026
+    CSD 340 Module 9.3
+
+    Write HTML file and add JavaScript features.
+    
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>CSD 340 Development with HTML and CSS</title>
+
+    <link rel="stylesheet" href="Sengvanhpheng_Mod2_2.css">
+
+    <meta charset="UTF-8" />
+    <meta name="description" content="Assignment creating webpage using HTML and CSS" />
+
+    <meta name="robots" content="nofollow" />
+    <meta name="author" content="Eric Sengvanhpheng" />
+
+
+</head>
+<body>
+
+    <div id="container">
+
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+        
+        <h2>The Matrix</h2>
+
+        <p>Have you ever had a dream, Neo, that you were so sure was real? What if you were unable to wake from that dream? How would you know the difference between the <span id="blank1"> _____ </span> world and the real world?</p>
+           
+        <p>You take the <span id="blank2"> ___ </span> pill, the story ends, you wake up in your bed and believe whatever you want to believe. You take the red pill, you stay in Wonderland, and I show you how deep the rabbit hole goes.</p>
+
+        <p>Remember, all I am offering is the <span id="blank3"> ____ </span>. Nothing more. Follow me, and see what the world of the <span id="blank4"> ______ </span> is truly about.</p>
+
+        <hr>
+        <!-- button containers to show clickable buttons -->
+        <div id="button-container">
+            <button onclick="revealWord1()">Word 1</button>
+            <button onclick="revealWord2()">Word 2</button>
+            <button onclick="revealWord3()">Word 3</button>
+            <button onclick="revealWord4()">Word 4</button>
+        </div>
+
+        <address>
+            <p><a href="https://www.bellevue.edu/">Bellevue University</a></p>
+            <p>1000 Galvin Road South</p>
+            <p>Bellevue, NE 68005</p>
+        </address>
+        
+    </div> <!-- end of container -->
+
+    <!--
+        Adding embedded JavaScript to HTML file
+        script block before end of /body
+     -->
+    <script>
+        // declare four JavaScript variables holding string inputs.
+        let word1 = "dream";
+        let word2 = "blue";
+        let word3 = "truth";
+        let word4 = "Matrix";
+
+        // functions to replace underscores inside <span> tags
+        function revealWord1() {
+            document.getElementById("blank1").innerText = word1;
+        }
+        function revealWord2() {
+            document.getElementById("blank2").innerText = word2;
+        }
+        function revealWord3() {
+            document.getElementById("blank3").innerText = word3;
+        }
+        function revealWord4() {
+            document.getElementById("blank4").innerText = word4;
+        }
+
+    </script>
+
+
+</body>
+</html>
