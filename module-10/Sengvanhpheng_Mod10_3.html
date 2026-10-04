@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSD 340 Web Development with HTML and CSS</title>
+    <style>
+        /* limit main image size */
+        #main-image {
+            width: 100%;
+            max-width: 1000px;
+            height: 600px;
+            object-fit: cover;
+        }
+
+        /* style thumbnails and add hand pointer on hover */
+        #thumbnails img {
+            width: 110px;
+            height: 75px;
+            object-fit: cover;
+            cursor: pointer; /* displays hand icon on hover */
+            margin: 5px;
+            border: 2px solid transparent;
+        }
+        #thumbnails img:hover {
+            border-color: darkslateblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 10.3: JavaScript - Part 2</h1>
+        <p>Click any image below to switch between views.</p>
+        <!-- main display -->
+        <figure id="featured-image">
+            <img id="main-image" src="img/desert1.jpg" alt="Desert in Daytime">
+            <figcaption id="image-caption">A Desert (Day View)</figcaption>
+        </figure>
+
+        <!-- 4 clickable thumbnails -->
+        <div id="thumbnails">
+            <img src="img/desert1.jpg" alt="Desert Day" onclick="changeDisplay('img/desert1.jpg', 'Desert (Day View)')">
+            <img src="img/desert2.jpg" alt="Desert Night" onclick="changeDisplay('img/desert2.jpg', 'Desert (Night View)')">
+            <img src="img/mountain1.jpg" alt="Mountain Day" onclick="changeDisplay('img/mountain1.jpg', 'Mountain (Day View)')">
+            <img src="img/mountain2.jpg" alt="Mountain Night" onclick="changeDisplay('img/mountain2.jpg', 'Mountain (Night View)')">
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript logic to alter the display -->
+    <script>
+        function changeDisplay(imagePath, captionText) {
+            // Update main image source and alt text
+            document.getElementById("main-image").src = imagePath;
+            document.getElementById("main-image").alt = captionText;
+
+            // Update the caption text below the image
+            document.getElementById("image-caption").innerText = captionText;
+        }
+    </script>
+
+</body>
+</html>
